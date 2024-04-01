@@ -1,5 +1,5 @@
 firebase_admin==6.2.0
-Flask
+Flask==2.2.2
 flask_sqlalchemy
 plotly==5.18.0
 Pyrebase4==4.7.1
