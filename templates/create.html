@@ -1,0 +1,85 @@
+{% extends 'master.html' %}
+{% include 'header.html' %}
+
+{% block title %} ADD {% endblock %}
+
+{% block body %}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Add New Data</h2>
+    <form method="post" action="">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="name_of_cis" class="form-label">Name of CIS</label>
+                <input type="text" name="name_of_cis" class="form-control" id="name_of_cis">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" name="location" class="form-control" id="location">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="source_of_water" class="form-label">Source of Water</label>
+                <input type="text" name="source_of_water" class="form-control" id="source_of_water">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="scheme_of_irrigation" class="form-label">Scheme of Irrigation</label>
+                <input type="text" name="scheme_of_irrigation" class="form-control" id="scheme_of_irrigation">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="service_area" class="form-label">Service Area</label>
+                <input type="text" name="service_area" class="form-control" id="service_area">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="firmed_up_service_area" class="form-label">Firmed-Up Service Area (Has.)</label>
+                <input type="text" name="firmed_up_service_area" class="form-control" id="firmed_up_service_area">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="operational_area" class="form-label">Operational Area (Has.)</label>
+                <input type="text" name="operational_area" class="form-control" id="operational_area">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="num_farmer_beneficiaries" class="form-label">No. of Farmer Beneficiaries</label>
+                <input type="text" name="num_farmer_beneficiaries" class="form-control" id="num_farmer_beneficiaries">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="name_of_ia" class="form-label">Name of IA</label>
+                <input type="text" name="name_of_ia" class="form-control" id="name_of_ia">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="main_canals" class="form-label">Main Canal(s)</label>
+                <input type="text" name="main_canals" class="form-control" id="main_canals">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="laterals" class="form-label">Laterals</label>
+                <input type="text" name="laterals" class="form-control" id="laterals">
+            </div>
+            <div class="col-md-12">
+                <button type="submit" name="submit" class="btn btn-warning">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<style>
+    /* Additional Custom CSS for Design */
+    .form-label {
+        font-weight: bold;
+    }
+
+    .mb-3 input[type="text"] {
+        border-radius: 10px;
+        border: 1px solid #ced4da;
+    }
+
+    .btn-warning {
+        background-color: #ffc107;
+        border-color: #ffc107;
+    }
+
+    .btn-warning:hover {
+        background-color: #ffa000;
+        border-color: #ffa000;
+    }
+</style>
+
+{% endblock %}

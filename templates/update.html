@@ -1,0 +1,100 @@
+{% extends 'master.html' %}
+{% include 'header.html' %}
+
+
+{% block title %} ADD {% endblock %} 
+
+
+{% block body %} 
+
+
+<div class ="container">
+    <form method="post" action="">
+        <table class ="table">
+
+                <tr>
+                    <td>NAME OF CIS</td>
+                    <td><input type = "text" name="name_of_cis" class="form-control" value="{{data.name_of_cis}}"></td>
+
+                </tr>
+
+                <tr>
+                    <td>LOCATION</td>
+                    <td><input type = "text" name="location" class="form-control"  value="{{data.location}}"> </td>
+
+                </tr>
+
+                    <tr>
+                        <td>SOURCE OF WATER</td>
+                        <td><input type = "text" name="source_of_water" class="form-control"  value="{{data.source_of_water}}"></td>
+    
+                    </tr>
+
+                </tr>
+
+                <tr>
+                    <td>Scheme of Irrigation</td>
+                    <td><input type = "text" name="scheme_of_irrigation" class="form-control"  value="{{data.scheme_of_irrigation}}"></td>
+
+                </tr>
+
+
+            <tr>
+                <td>SERVICE AREA</td>
+                <td><input type = "text" name="service_area" class="form-control"  value="{{data.service_area}}"></td>
+
+            </tr>
+
+
+            <tr>
+                <td>Firmed-Up Service Area (Has.)</td>
+                <td><input type = "text" name="firmed_up_service_area" class="form-control"  value="{{data.firmed_up_service_area}}"></td>
+
+            </tr>
+
+            <tr>
+                <td>Operational Area (Has.)</td>
+                <td><input type = "text" name="operational_area" class="form-control"  value="{{data.operational_area}}"></td>
+    
+            </tr>
+
+            <tr>
+                <td>No. of Farmer Beneficiaries</td>
+                <td><input type = "text" name="num_farmer_beneficiaries" class="form-control"  value="{{data.num_farmer_beneficiaries}}"></td>
+    
+            </tr>
+
+            <tr>
+                <td>Name of IA</td>
+                <td><input type = "text" name="name_of_ia" class="form-control"  value="{{data.name_of_ia}}"></td>
+    
+            </tr>
+
+            <tr>
+                <td>Main Canal(s)</td>
+                <td><input type = "text" name="main_canals" class="form-control"  value="{{data.main_canals}}"></td>
+    
+            </tr>
+
+            <tr>
+                <td>Laterals</td>
+                <td><input type = "text" name="laterals" class="form-control"  value="{{data.laterals}}"></td>
+    
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                <td><input type = "submit" name="submit" value="submit" class="btn btn-warning">
+                </td>
+                
+            </tr>
+
+
+               
+        </table>
+
+    </form>
+</div>
+
+
+{% endblock %} 

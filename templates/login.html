@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h4 {
+            font-size: 30px;
+        }
+
+        .outer-div {
+            max-width: 800px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            position: relative;
+        }
+
+        .outer-div img {
+            max-width: 30%;
+            height: auto;
+            margin-top: 100px;
+            margin-right: 20px;
+        }
+
+        h1, h2, h3 {
+            position: absolute;
+            font-size: 50px;
+            margin: 0;
+        }
+
+        h1 {
+            top: 50px;
+            left: 10px;
+            font-size: 30px;
+           
+        }
+
+        h2 {
+            top: 80px;
+            left: 10px;
+            font-size: 35px;
+        }
+
+        h3 {
+            top: 110px;
+            left: 10px;
+            font-size: 20px;
+        }
+
+        form {
+            max-width: 60%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            height: 350px;
+            width: 250px;
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"], input[type="password"], button {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .logo-text {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 20px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .formaction {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-div">
+        <img src="static/[Hi-Res] BAGONG PILIPINAS LOGO.png" alt="BAGONG PILIPINAS">
+        <h1>NATIONAL IRRIGATION</h1>
+        <h2>ADMINISTRATION</h2>
+        <h3>REGION IV-A (CALABARZON)</h3>
+        <form action="/" method="post">
+            <center><h4>Login</h4></center>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
