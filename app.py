@@ -1,9 +1,10 @@
-from flask import Flask, render_template, request, redirect, abort, send_file, session, url_for, flash
+from flask import Flask, render_template, request, redirect, abort, session, url_for, flash
 from models import db, ProjectModel
 from sqlalchemy import or_
-import plotly.graph_objs as go
 import pyrebase
 from firebase_admin import auth
+from urllib.parse import quote
+
 
 app = Flask(__name__)
 
