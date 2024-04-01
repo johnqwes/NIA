@@ -5,3 +5,4 @@ plotly==5.18.0
 Pyrebase4==4.7.1
 SQLAlchemy==1.4.39
 requests
+gunicorn==21.2.0
