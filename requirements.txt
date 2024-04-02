@@ -6,4 +6,5 @@ Pyrebase4==4.7.1
 SQLAlchemy==1.4.39
 requests
 gunicorn==21.2.0
-Werkzeug
+Werkzeug>=2.2.2
+
