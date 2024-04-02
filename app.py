@@ -5,7 +5,7 @@ import pyrebase
 from firebase_admin import auth
 from werkzeug.urls import quote
 
-
+    
 app = Flask(__name__)
 
 firebaseConfig = {
