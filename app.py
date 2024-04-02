@@ -3,6 +3,7 @@ from models import db, ProjectModel
 from sqlalchemy import or_
 import pyrebase
 from firebase_admin import auth
+from urllib.parse import quote  # Importing quote function from urllib.parse
 
 app = Flask(__name__)
 
